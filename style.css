@@ -1,0 +1,330 @@
+* {
+  margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: aqua;
+}
+.logo img {
+  height: 60px;
+  margin: 10px;
+}
+.list a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: darkgray;
+}
+span:hover {
+  color: blue;
+}
+.list a:hover {
+  color: lightslategray;
+}
+
+/* Home Section */
+.home {
+  background: url(images/coding-person.jpeg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: tomato;
+  font-family: "Monserrat" sans-serif;
+  height: 100vh;
+}
+.max-width {
+  height: 50%;
+  height: 100%;
+}
+.home-content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .home-content .text1 {
+  font-size: 3rem;
+}
+.home .home-content .text2 {
+  font-size: 6rem;
+  font-weight: 500;
+}
+.home .home-content .text3 {
+  font-size: 3rem;
+}
+.home .home-content button {
+  background-color: tomato;
+  border-radius: 20px;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 5px;
+  color: white;
+  display: inline-block;
+  height: 50px;
+  width: 180px;
+  transition: all 0.5s ease-in-out;
+}
+.home .home-content button:hover {
+  background-color: turquoise;
+  color: darkslategray;
+}
+.home .home-content {
+  transition: all 0.5 ease;
+}
+.home .home-content a {
+  transition: all 0.5s ease;
+}
+
+/* About Section */
+
+.max-width .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.About-Content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.About-Content .colum-left {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+.colum-left img {
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+  border: groove #91ddcf;
+  border-radius: 150px;
+  border-width: 5px;
+}
+.About-Content .colum-right {
+  width: 70%;
+}
+.colum-right .sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.About-Content .colum-right .authors-info {
+  font-size: 1.3rem;
+  text-align: justify;
+  line-height: 1.3em;
+  padding: 20px;
+}
+/* Services Section */
+section {
+  padding: 100px 0;
+}
+
+.services {
+  color: black;
+  background: tomato;
+}
+
+.services .title {
+  font-family: "Monserrat";
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 2em;
+}
+.services .services-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.services .services-content .card {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  background: white;
+  border-radius: 6px;
+  padding: 50px 10px;
+}
+
+.services .services-content .card .box {
+  text-align: center;
+  width: 85%;
+}
+.services .services-content .card:hover {
+  background: turquoise;
+}
+.services .services-content .card .box {
+  transition: all 0.3 ease-out;
+}
+.services .services-content .card .box:hover {
+  transform: scale(1.07);
+}
+.services .services-content .card img {
+  height: 60px;
+  width: 60px;
+}
+.services .services-content .text {
+  font-family: "Monserrat";
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.services .services-content p {
+  font-family: "Monserrat";
+  font-size: 1.1rem;
+}
+
+/* Skills Section */
+.skills {
+  font-family: "Monserrat";
+  font-size: 1.1rem;
+}
+.skills .title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+.skills .skills-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-content .column {
+  width: 50%;
+  padding: 30px;
+}
+.skills .skills-content .left .text {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: justify;
+}
+.skills .skills-content .left p {
+  text-align: justify;
+  font-size: 1.3rem;
+  line-height: 1.3em;
+}
+.skills .skills-content .left a {
+  display: inline-block;
+  background: tomato;
+  color: white;
+  font-size: 1.3rem;
+  padding: 12px 36px;
+  margin-top: 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.skills .skills-content .left a:hover {
+  background-color: turquoise;
+  color: darkslategray;
+}
+/* column right */
+.skills .skills-content .right .bar {
+  margin-bottom: 15px;
+}
+.skills .skills-content .right .info {
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+.skills .skills-content .right .line {
+  height: 5px;
+  width: 100%;
+  background-color: lightslategray;
+  position: relative;
+}
+.skills .skills-content .right .line::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background-color: tomato;
+}
+.skills-content .right .html::before {
+  width: 90%;
+}
+.skills-content .right .css::before {
+  width: 85%;
+}
+.skills-content .right .js::before {
+  width: 82%;
+}
+.skills-content .right .php::before {
+  width: 80%;
+}
+.skills-content .right .mysql::before {
+  width: 80%;
+}
+
+/* Contact Section */
+.contact {
+  font-family: "Monserrat";
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 50px;
+}
+.contact .contacts-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .contacts-content .column {
+  width: calc(50% - 30px);
+  padding: 20px;
+}
+
+.contact .contacts-content .column .text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: tomato;
+  margin: 10px 0;
+}
+.contact .contacts-content .left p {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.contact .contacts-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contacts-content .row .info {
+  margin-left: 20px;
+}
+.contact .contacts-content .left img {
+  height: 20px;
+  width: 20px;
+}
+.contact .contacts-content .info .head {
+  color: tomato;
+  font-weight: 600;
+  padding: 5px 0;
+}
+.contact .contacts-content .info .sub-title {
+  font-weight: 600;
+}
