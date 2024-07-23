@@ -12,6 +12,9 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: aqua;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 .logo img {
   height: 60px;
@@ -25,7 +28,7 @@
   color: darkgray;
 }
 span:hover {
-  color: blue;
+  color: rgba(49, 15, 201, 0.89);
 }
 .list a:hover {
   color: lightslategray;
@@ -38,10 +41,12 @@ span:hover {
   background-attachment: fixed;
   color: tomato;
   font-family: "Monserrat" sans-serif;
-  height: 100vh;
+  height: 90vh;
+  min-height: 500px;
+  max-height: 720;
 }
 .max-width {
-  height: 50%;
+  height: 100%;
   height: 100%;
 }
 .home-content {
@@ -66,6 +71,7 @@ span:hover {
 .home .home-content button {
   background-color: tomato;
   border-radius: 20px;
+  border-style: none;
   font-size: 24px;
   margin-top: 15px;
   margin-left: 5px;
@@ -87,8 +93,16 @@ span:hover {
 }
 
 /* About Section */
+.About {
+  background: url(images/banner-5.jpg) repeat center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 90vh;
+  min-height: 500px;
+  max-height: 720;
+}
 
-.max-width .title {
+.About .title {
   text-align: center;
   font-size: 2rem;
   margin-top: 30px;
@@ -134,7 +148,12 @@ section {
 
 .services {
   color: black;
-  background: tomato;
+  background: url(images/HD-wallpaper-best.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 90vh;
+  min-height: 500px;
+  max-height: 720;
 }
 
 .services .title {
@@ -153,7 +172,8 @@ section {
 .services .services-content .card {
   display: flex;
   justify-content: center;
-  width: 20%;
+  width: 32%;
+
   background: white;
   border-radius: 6px;
   padding: 50px 10px;
@@ -184,13 +204,19 @@ section {
 }
 .services .services-content p {
   font-family: "Monserrat";
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Skills Section */
 .skills {
   font-family: "Monserrat";
   font-size: 1.1rem;
+  background: url(images/banner-3.jpg) repeat center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 90vh;
+  min-height: 500px;
+  max-height: 720;
 }
 .skills .title {
   text-align: center;
@@ -230,7 +256,7 @@ section {
 }
 .skills .skills-content .left a:hover {
   background-color: turquoise;
-  color: darkslategray;
+  color: white;
 }
 /* column right */
 .skills .skills-content .right .bar {
@@ -241,6 +267,9 @@ section {
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
+}
+.skills .skills-content .right .info span:hover {
+  color: turquoise;
 }
 
 .skills .skills-content .right span {
@@ -281,6 +310,12 @@ section {
 /* Contact Section */
 .contact {
   font-family: "Monserrat";
+  background: url(images/banner-4.jpg) repeat center;
+  height: 90vh;
+  min-height: 500px;
+  max-height: 720px;
+  background-size: cover;
+  background-attachment: scroll;
 }
 .title {
   text-align: center;
@@ -327,4 +362,202 @@ section {
 }
 .contact .contacts-content .info .sub-title {
   font-weight: 600;
+}
+
+.contact .right form .fields {
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields,
+.field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.contact .right form .textarea {
+  height: 80px;
+  width: 100%;
+}
+.contact .right form .name {
+  margin-right: 10px;
+}
+.contact .right form .email {
+  margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px 15px;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+  border-color: tomato;
+}
+.contact .right form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+.contact .right form .button {
+  height: 50px;
+  width: 150px;
+}
+.contact .right form .button button {
+  width: 100%;
+  height: 100%;
+  background: tomato;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border-style: none;
+  cursor: pointer;
+}
+.contact .right form .button button:hover {
+  color: white;
+  background: turquoise;
+}
+
+/* footer section */
+footer {
+  font-family: "Monserrat", sans-serif;
+  text-align: center;
+  background: rgba(49, 15, 201, 0.89);
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+
+footer span a {
+  text-decoration: none;
+  color: tomato;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Media Query */
+
+@media (max-width: 1920px) {
+  .home .max-width {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 1104px) {
+  /* home Section */
+  .home {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0px;
+  }
+  /* .home.max-width{
+    height: 100vh;
+  } */
+  .home.max-width.home-content {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home-content .text-container .text2 {
+    font-size: 3.5rem;
+    color: aliceblue;
+  }
+
+  /* home Section */
+  /* About ection */
+
+  .About {
+    height: auto;
+    background: white;
+    padding: 0px;
+  }
+  .About .max-width .title {
+    padding-bottom: 0;
+  }
+  .About .About-Content {
+    display: flex;
+    flex-direction: column;
+  }
+  .About-Content .colum-left {
+    width: 100%;
+    padding: 30px;
+  }
+  .About-Content .colum-left img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .About-Content .colum-right {
+    width: auto;
+    text-align: center;
+  }
+
+  /* Services Section */
+  .services {
+    height: auto;
+    background: url(images/HD-wallpaper-best.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .services .services-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .services .services-content .card {
+    display: flex;
+    justify-content: center;
+    flex: 0;
+    width: 350px;
+
+    border-radius: 6px;
+    padding: 50px 10px;
+  }
+  /* kills Section */
+  .skills {
+    height: auto;
+  }
+  .skills .skills-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .skills .skills-content .column {
+    flex: none;
+    width: 100%;
+    height: 100%;
+  }
+  /* Contact Section */
+
+  .contact .contacts-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: "Monserrat";
+    background: url(images/banner-4.jpg) repeat center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .contact .contacts-content .column {
+    flex: 0;
+    width: 450px;
+  }
+
+  footer {
+    margin-top: 400px;
+  }
 }
